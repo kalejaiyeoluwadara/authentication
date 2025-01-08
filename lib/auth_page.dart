@@ -2,6 +2,7 @@
 
 import 'package:authentication/components/my_button.dart';
 import 'package:authentication/components/my_textfield.dart';
+import 'package:authentication/components/square_tile.dart';
 import 'package:flutter/material.dart';
 
 class AuthPage extends StatelessWidget {
@@ -74,12 +75,28 @@ class AuthPage extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                    child: Divider(
-                  thickness: 0.5,
-                  color: Colors.grey[400],
-                )),
+                  child: Divider(
+                    thickness: 0.5,
+                    color: Colors.grey[400],
+                  ),
+                ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SquareTile(
+                imagePath: 'assets/images/google.png',
+              ),
+              SizedBox(width: 10),
+              SquareTile(
+                imagePath: 'assets/images/apple.png',
+              )
+            ],
           )
         ],
       ),
