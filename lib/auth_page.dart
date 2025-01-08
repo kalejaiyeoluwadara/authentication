@@ -15,9 +15,8 @@ class AuthPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 50),
           Center(
             child: Icon(
               Icons.lock,
@@ -92,9 +91,29 @@ class AuthPage extends StatelessWidget {
               SquareTile(
                 imagePath: 'assets/images/google.png',
               ),
-              SizedBox(width: 10),
+              SizedBox(width: 25),
               SquareTile(
                 imagePath: 'assets/images/apple.png',
+              )
+            ],
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Not a member?',
+                style: TextStyle(color: Colors.grey[700]),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                'Register Now',
+                style:
+                    TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
               )
             ],
           )
