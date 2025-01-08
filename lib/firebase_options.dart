@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1066335156023',
     projectId: 'authtutorial-5ce19',
     storageBucket: 'authtutorial-5ce19.firebasestorage.app',
-    iosBundleId: 'com.example.authentication',
+    iosBundleId: 'com.myapp.auth',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -72,7 +72,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1066335156023',
     projectId: 'authtutorial-5ce19',
     storageBucket: 'authtutorial-5ce19.firebasestorage.app',
-    iosBundleId: 'com.example.authentication',
+    iosBundleId: 'com.myapp.auth',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
