@@ -153,14 +153,16 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
                 SizedBox(height: 25),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SquareTile(
+                      onTap: () {},
                       imagePath: 'assets/images/google.png',
                     ),
                     SizedBox(width: 25),
                     SquareTile(
+                      onTap: () {},
                       imagePath: 'assets/images/apple.png',
                     ),
                   ],
